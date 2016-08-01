@@ -4,12 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet" />
 <link rel="stylesheet" href="wikiglyphs.css" />
-<title>GLAMpipe style</title>
+<title>GLAMpipe Node parameters</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="vbox">
-<header> <span class="title sitetitle">GLAMpipe</span> </header>
+<header> <a href="projects.html"  class="title sitetitle">GLAMpipe</a> </header>
 <content class="main hbox space-between">
   <pipe>
     <div class="pageheader">
@@ -36,7 +36,7 @@
       <div><span class="title sectiontitle">Sources</span> <a href="#">Add source</a></div>
       <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
     </div>
-    <div class="box source">
+    <div class="box source inpipe">
       <div class="boxleft">
         <div class="boxtag">Source</div>
         <div class="title boxtitle">BL Pics</div>
@@ -50,391 +50,289 @@
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Extract</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Extract a substring from a string, save in a new field.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Extract fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_xtr" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Lowercase</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Convert a string into lowercase, save in a new field.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Lowercase fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_lwr" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Regular expression search</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Extract a substring from a string with a regular expression, save in a new field.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Regexp fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_rgx" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Search and replace</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Search and replace a substring, save in a new field. You can use regular expressions.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Search and replace fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_snr" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Split</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Split field to an array, save in a new field.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Split fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_spl" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Combine fields</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Combine string fields with arbitrary strings, save in a new field.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Combine fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_cmb" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div><span class="title inlinetitle">Bounding box to GeoJSON</span></div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Convert a bounding box to a GeoJSON polygon.</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Bounding box to GeoJSON fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
           <p class="listtext">
             <label for="description"></label>
-            <input type="text" name="description" id="description" />
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
           </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_bbx" />
+          </p>
+        </div>
       </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
     <div class="fatbox">
       <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
+        <div class="title inlinetitle">Ajapaik image details lookup</div>
       </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
+      <div class="infotext">Fetches image details from Ajapaik</div>
       <div class="optionlist">
-        <div class="listoption">
+        <div class="listitem">
           <p class="listtitle">Title</p>
           <p class="listtext">
             <label for="title"></label>
-            <input type="text" name="title" id="title" />
+            <input name="title" type="text" id="title" value="Ajapaik image details fieldname" />
           </p>
         </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
+        <div class="listitem">
+          <p class="listtitle">Parameters</p>
+          <p class="listtext"> No parameters. </p>
         </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
       </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
-    </div>
-    <div class="fatbox">
-      <div class="inlinetitleblock">
-        <div><span class="title inlinetitle">Create node</span></div>
-      </div>
-      <div class="infotext">You can add several collections to your project, and fetch data from them to your main collection, or have different versions of your data.</div>
-      <div class="optionlist">
-        <div class="listoption">
-          <p class="listtitle">Title</p>
-          <p class="listtext">
-            <label for="title"></label>
-            <input type="text" name="title" id="title" />
-          </p>
-        </div>
-        <div class="listoption">
-          <p class="listtitle">Description</p>
-          <p class="listtext">
-            <label for="description"></label>
-            <input type="text" name="description" id="description" />
-          </p>
-        </div>
-        <a href="project.html"><div class="button">Create collection</div></a>
-      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
     </div>
   </pipe>
-  <workspace>
-  <div class="settingscontainer">
-    <div class="settingsheader">
-      <div class="title settingstitle">Settings for ...</div>
-      <div class="wikiglyph wikiglyph-caret-up icon boxicon" aria-hidden="true"></div>
-    </div>
-    <div class="settings"></div>
-  </div>
-  <div class="data"></div>
-  <div class="datacontainer">
-    <div class="dataheader">
-      <div class="title settingstitle">Settings for ...</div>
-   
-    </div>
-    <div class="settings"></div>
-  </div>
-  <div class="data"></div>
-  </workspace>
+  <workspace> </workspace>
 </content>
 </body>
 </html>
