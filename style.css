@@ -35,6 +35,10 @@ table {
 	border-collapse: collapse;
 }
 
+th {
+	font-weight:400;
+}
+
 th, td {
     border-bottom: 1px solid #ddd;
 }
@@ -97,8 +101,8 @@ header {
 content {
 }
 
-workspace {
-	background-color: #f5f5f5;
+data-workspace {
+	background-color: #EFEFEF;
 	width: 100%;
 	margin-left: 1px;
 	        -webkit-flex: 5;
@@ -173,6 +177,26 @@ pipe {
 	align-self: flex-start;
 }
 
+.itemsleft {
+	margin-right: auto;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: row;
+   flex-direction: row;
+   align-items:center;
+   -webkit-align-items:center;
+}
+
+.itemsright {
+	margin-left: auto;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: row;
+   flex-direction: row;
+   align-items:center;
+   -webkit-align-items:center;
+}
+
 .boxright {
 	margin-left: auto;
 	display: -webkit-flex;
@@ -188,12 +212,13 @@ pipe {
 }
 
 .boxtitle {
-	font-size: 15px;
-	margin:3px 0px 0px 0px;
+	font-weight:400;
+	margin-top:3px;
 }
 
 .inlinetitle {
 	font-size: 15px;
+	font-weight:400;
 }
 
 .inlinetitleblock {
@@ -201,6 +226,8 @@ pipe {
 	display: -webkit-flex;
     display: flex;
 	margin-bottom: 5px;
+	-webkit-flex-direction: column;
+   flex-direction: column;
 }
 
 a .inlinetitleblock {
@@ -280,7 +307,7 @@ a .listoption:hover {
 }
 
 .listtitle {
-	font-weight: 400;
+	font-weight: 500;
 	margin: 0px;
 	color:#444;
 }
@@ -317,8 +344,12 @@ a .listoption:hover {
 	border-left:solid rgba(52,123,255,1) 10px;
 }
 
-.settingsheader {
-	background-color: rgba(255,255,255,0.5);
+settingscontainer {
+	display:block;
+	background-color: rgba(255,255,255,1);
+}
+
+settingsheader {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -333,7 +364,33 @@ a .listoption:hover {
 	font-size: 18px;
 }
 
-.dataheader {
+settingsblock {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+submitblock {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	height: 60px;
+	padding: 0px 20px;
+}
+
+.settings {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	display: flex;
+	margin: 0px 20px;
+}
+
+dataheader {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -344,11 +401,22 @@ a .listoption:hover {
 	padding: 0px 20px;
 }
 
+data-controls {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
 input[type=text] {
     font-size:13px;
+	font-weight:300;
 	width: 315px;
     padding: 5px 0px;
-    margin: 8px 0;
+    margin: 5px 0;
 	border: none;
     border-bottom: 1px solid #efefef;
     -webkit-transition: 0.5s;
@@ -360,8 +428,29 @@ input[type=text]:focus {
     border-bottom: 1px solid #444;
 }
 
+input[type=textarea] {
+    font-size:13px;
+	font-weight:300;
+	width: 315px;
+	height: 50px;
+    padding: 5px 0px;
+    margin: 5px 0;
+	border: none;
+    border-bottom: 1px solid #efefef;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	overflow-wrap: normal;
+	overflow-x: scroll;
+}
+
+input[type=textarea]:focus {
+    border-bottom: 1px solid #444;
+}
+
 .button {
     background-color: #347BFF;
+	font-weight: 300;
     border: none;
     color: white;
     padding:.6em 1.5em;
@@ -375,6 +464,9 @@ input[type=text]:focus {
 	-webkit-border-radius:2px;
 	-webkit-transition-duration: 0.1s; /* Safari */
     transition-duration: 0.1s;
+	font-family: 'Open Sans', sans-serif;
+	align-self: center;
+
 }
 
 .button:hover {
@@ -383,7 +475,7 @@ input[type=text]:focus {
 	outline:0
 }
 
-.data {
+data {
 	overflow-x:auto;
 }
 button.accordion {
@@ -496,3 +588,44 @@ div.panel.show {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #333;
 }
+
+select {
+	vertical-align:middle;
+	width: 315px;
+}
+
+.help {
+	margin: 0.1em 0 0.5em 0;
+	width:315px;
+	font-size:0.9em;
+	font-style:italic;
+}
+
+label {
+	font-weight:500;
+	margin-top:0.5em;
+	width:315px;
+}
+
+b {
+	font-weight:400;
+}
+
+.alert {
+	width:315px;
+	font-size:0.9em;
+	font-style:italic;
+	color:#EF5009;
+	font-weight:400;
+}
+
+.summary {
+	color:#999;
+	font-size:0.9em;
+	font-style:italic;
+}
+
+.fitwidth {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
