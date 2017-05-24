@@ -431,16 +431,17 @@ data-controls {
 }
 
 input[type=text] {
-    font-size:13px;
+	font-size:13px;
 	font-weight:300;
+	color:#204EA5;
 	width: 315px;
-    padding: 5px 0px;
-    margin: 5px 0;
+	padding: 5px 0px;
+	margin: 5px 0;
 	border: none;
-    border-bottom: 1px solid #efefef;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+	border-bottom: 1px solid #efefef;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
 }
 
 input[type=text]:focus {
