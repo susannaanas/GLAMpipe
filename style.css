@@ -21,14 +21,14 @@ body {
 }
 
 a {
-	color: #347BFF;
+	color: #2B67C9;
 	text-decoration: none;
 	-webkit-transition-duration: 0.1s; /* Safari */
     transition-duration: 0.1s;
 }
 
 a:hover {
-	color:#2B67C9;
+	color:#347BFF;
 }
 
 table {
@@ -433,7 +433,7 @@ data-controls {
 input[type=text] {
 	font-size:13px;
 	font-weight:300;
-	color:#204EA5;
+	color:#333;
 	width: 315px;
 	padding: 5px 0px;
 	margin: 5px 0;
@@ -617,6 +617,8 @@ select {
 	vertical-align:middle;
 	width: 315px;
 	margin:0.5em 0em;
+	padding:0.5em;
+	color:#333;
 }
 
 .help {
