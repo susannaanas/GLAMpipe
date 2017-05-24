@@ -133,11 +133,10 @@ pipe {
 }
 
 .breadcrumbblock {
-	width:100%;
 	display: -webkit-flex;
 	align-items: center;
     display: flex;
-	padding: 5px 0px;
+	padding: 5px 10px 5px 0px;
 }
 
 .pagetitleblock {

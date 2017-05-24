@@ -12,13 +12,8 @@
 <header><a href="projects.html"><span class="title sitetitle">GLAMpipe</span></a></header>
 <content class="main hbox space-between">
   <pipe>
-  <a href="projects.html">
-  <div class="pageheader">
-    <div class="title pagetitle">Susanna's Ajapaik BL</div>
-  </div>
-  </a>
-  <div class="sectiontitleblock">
-    <div><span class="title sectiontitle">Collections</span> <a href="#">Add collection</a></div>
+  <div class="breadcrumbblock">
+    <div><div class="boxtag">MyProject > MyDataset</div></div>
     <div class="boxright"> <a href="collections.html">
       <div class="wikiglyph wikiglyph-stripe-menu icon" aria-hidden="true"></div>
       </a>
@@ -27,45 +22,33 @@
       <div class="wikiglyph wikiglyph-caret-right icon" aria-hidden="true"></div>
     </div>
   </div>
-  <div class="box">
-    <div class="boxleft">
-      <div class="boxtag">Collection</div>
-      <div class="title boxtitle">BL Pics</div>
-      <div class="boxtext">See if these could be a good source</div>
-    </div>
-    <div class="wikiglyph wikiglyph-cross icon boxicon" aria-hidden="true"></div>
+  <div class="pagetitleblock">
+    <div><span class="title pagetitle">MyDataset</span> <a href="#">Create data collection</a></div>
+    <div class="boxtext">This is the description of the dataset</div>
   </div>
- <div class="sectiontitleblock">
-      <div><span class="title sectiontitle">Sources</span> <a href="#">Add source</a></div>
+  <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Sources</span> <a href="#">Add data source</a></div>
       <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
     </div>
-    <div class="box source">
+    <div class="box">
       <div class="boxleft">
         <div class="boxtag">Source</div>
-        <div class="title boxtitle">BL Pics</div>
+        <div class="title boxtitle">MySource</div>
         <div class="boxtext">See if these could be a good source</div>
       </div>
       <div class="wikiglyph wikiglyph-cross boxicon icon" aria-hidden="true"></div>
     </div>
     <div class="sectiontitleblock">
-      <div><span class="title sectiontitle">Nodes</span> <a href="#">Add node</a></div>
+      <div><span class="title sectiontitle">Operations</span> <a href="#">Add operation</a></div>
       <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
     </div>
-  <div class="fatbox vbox">
-  <div class="inlinetitleblock">
-    <div><span class="title inlinetitle">Wikidata lookup</span></div>
-  </div>
-  <div class="help">Find values based on matches in Wikidata. You must first match Wikidata items using <a href="reconwd.html">Wikidata reconcile node</a>.</div>
-	<label>Field with the Wikidata item</label>
-    <div class="help">Select the field for which you will look for a property in Wikidata.</div>
-<select name="name">
-      <option value="">Suggested item 1</option>
-      <option value="">Suggested item 2</option>
-      <option value="">Suggested item 3</option>
-    </select>
-	<label>Suffix for the output field</label>
-    <input type="text" name="suffix" value="_wd">
-    <a href="#"><div data-index="139" class="button create-node">Create node</div></a>
+  <div class="box">
+      <div class="boxleft">
+        <div class="boxtag">Lookup</div>
+        <div class="title boxtitle">Wikidata lookup</div>
+        <div class="boxtext">Looks up WIkidata...</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross boxicon icon" aria-hidden="true"></div>
     </div>
     </pipe>
     <data-workspace>
@@ -82,7 +65,7 @@
     <label>Qualifier of the property to find (optional)</label>
 	<input type="text" name="suffix">
     <label>Output format</label>
-	<select name="name">
+	<select name="name" class="active">
       <option value="">Value in Wikidata</option>
       <option value="">Textual, localized, formatted value</option>
     </select>
