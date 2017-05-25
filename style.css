@@ -49,6 +49,26 @@ td:first-child, th:first-child {
 	padding-left:20px;
 }
 
+.settingslist {
+	margin: 1em 0;
+}
+
+.settingslist tr {
+	color: #2B67C9;
+}
+
+.settingslist th, td {
+    padding-left:10px;
+	border-bottom:none;
+}
+
+.settingslist tr:hover {color: #347BFF}
+
+.settingslist td:first-child, th:first-child {
+	padding-left:0px;
+}
+
+
 .vbox {
 	    display: -webkit-flex;
         display:    -moz-flex;
@@ -143,8 +163,11 @@ pipe {
 	width:100%;
 	display: -webkit-flex;
 	flex-direction: column;
-    display: flex;
-	padding: 5px 0px 10px 0px;
+	display: flex;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
 }
 
 .pagetitle {
@@ -366,6 +389,7 @@ a .listoption:hover {
 settingscontainer {
 	display:block;
 	background-color: rgba(255,255,255,1);
+	margin-bottom:1px;
 }
 
 settingsheader {
@@ -383,6 +407,13 @@ settingsheader {
 	font-size: 18px;
 }
 
+settingssubtitle {
+	display: -webkit-flex;
+	align-items: flex-end;
+    display: flex;
+	padding: 20px 0px 10px 20px;
+}
+
 settingsblock {
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -390,6 +421,14 @@ settingsblock {
 	flex-direction: row;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+settingsrow {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	display: flex;
 }
 
 submitblock {
@@ -403,11 +442,11 @@ submitblock {
 .settings {
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
 	display: flex;
+	flex: 1 1 33%;
 	margin: 0px 20px;
 }
+
 
 dataheader {
 	display: -ms-flexbox;
@@ -434,7 +473,6 @@ input[type=text] {
 	font-size:13px;
 	font-weight:300;
 	color:#333;
-	width: 315px;
 	padding: 5px 0px;
 	margin: 5px 0;
 	border: none;
@@ -451,7 +489,6 @@ input[type=text]:focus {
 input[type=textarea] {
     font-size:13px;
 	font-weight:300;
-	width: 315px;
 	height: 50px;
     padding: 5px 0px;
     margin: 5px 0;
@@ -615,7 +652,6 @@ div.panel.show {
 
 select {
 	vertical-align:middle;
-	width: 315px;
 	margin:0.5em 0em;
 	padding:0.5em;
 	color:#333;
@@ -630,7 +666,6 @@ select {
 label {
 	font-weight:500;
 	margin-top:0.8em;
-	width:315px;
 }
 
 b {
@@ -638,7 +673,6 @@ b {
 }
 
 .alert {
-	width:315px;
 	font-size:0.9em;
 	font-style:italic;
 	color:#EF5009;

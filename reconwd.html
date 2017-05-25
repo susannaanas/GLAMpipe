@@ -12,34 +12,26 @@
 <header><a href="projects.html"><span class="title sitetitle">GLAMpipe</span></a></header>
 <content class="main hbox space-between">
   <pipe>
-  <a href="projects.html">
-  <div class="pageheader">
-    <div class="title pagetitle">Susanna's Ajapaik BL</div>
-  </div>
-  </a>
-  <div class="sectiontitleblock">
-    <div><span class="title sectiontitle">Collections</span> <a href="#">Add collection</a></div>
-    <div class="boxright"> <a href="collections.html">
-      <div class="wikiglyph wikiglyph-stripe-menu icon" aria-hidden="true"></div>
-      </a>
-      <div class="wikiglyph wikiglyph-caret-left icon" aria-hidden="true"></div>
-      <div>1 / 3</div>
-      <div class="wikiglyph wikiglyph-caret-right icon" aria-hidden="true"></div>
+    <div class="breadcrumbblock">
+      <div>
+        <div class="boxtag">MyProject &gt; Mycollection</div>
+      </div>
+      <div class="boxright">
+        <div class="wikiglyph wikiglyph-stripe-menu icon" aria-hidden="true"></div>
+        <div class="wikiglyph wikiglyph-caret-left icon" aria-hidden="true"></div>
+        <div>1 / 3</div>
+        <div class="wikiglyph wikiglyph-caret-right icon" aria-hidden="true"></div>
+      </div>
     </div>
-  </div>
-  <div class="box">
-    <div class="boxleft">
-      <div class="boxtag">Collection</div>
-      <div class="title boxtitle">BL Pics</div>
-      <div class="boxtext">See if these could be a good source</div>
+    <div class="pagetitleblock">
+      <div><span class="title pagetitle">MyDataset</span> <a href="#">Create data collection</a></div>
+      <div class="boxtext">This is the description of the dataset</div>
     </div>
-    <div class="wikiglyph wikiglyph-cross icon boxicon" aria-hidden="true"></div>
-  </div>
-  <div class="sectiontitleblock">
-    <div><span class="title sectiontitle">Sources</span> <a href="#">Add source</a></div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Data source</span> <a href="#">Add source</a></div>
     <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
-  </div>
-  <div class="fatbox">
+</div>
+  <div class="fatbox vbox">
   <div class="inlinetitleblock">
     <div><span class="title inlinetitle">Wikidata reconcile</span></div>
   </div>
@@ -65,21 +57,18 @@
       </div>
     </settingsheader>
     <settingsblock>
-    <div class="settings">
+    <div class="settings vbox">
   <label>Wikidata type to match against</label>
+  <div class="help">Click on the proper type or type in the input box to find another one.</div>
+<div></div>
   <div>
-    <input name="radiolist" type="radio" value="yksi" checked />
-    <select name="name" style="width:90%">
-      <option value="">Suggested item 1</option>
-      <option value="">Suggested item 2</option>
-      <option value="">Suggested item 3</option>
-    </select>
+    <p><a href="#">Human (Q5)</a></p>
+    <p><a href="#">Asteroid (Q3863)</a></p>
+    <p>
+      <input name="search" type="text" style="width:90%" value="Autocomplete Wikidata items">
+    </p>
   </div>
-  <div>
-    <input name="radiolist" type="radio" value="kaksi" checked />
-    <input type="text" name="search" style="width:90%">
-  </div>
-  <label>Map additional fields <a href="#">Add row</a></label>
+  <label>Use these fields also to weight matches <a href="#">Add row</a></label>
   <div class="help">These fields will be used to score better matches.</div>
 <div class="hbox space-between">
     <select name="name" style="width:30%">
