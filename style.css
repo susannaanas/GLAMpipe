@@ -411,7 +411,8 @@ settingssubtitle {
 	display: -webkit-flex;
 	align-items: flex-end;
     display: flex;
-	padding: 20px 0px 10px 20px;
+	margin-left: 20px;
+	padding: 20px 0px 10px 0px;
 }
 
 settingsblock {
@@ -444,7 +445,11 @@ submitblock {
 	display: -webkit-flex;
 	display: flex;
 	flex: 1 1 33%;
-	margin: 0px 20px;
+	margin-right:20px;
+}
+
+.settings:first-child {
+	margin-left: 20px;
 }
 
 
