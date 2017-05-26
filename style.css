@@ -49,20 +49,26 @@ td:first-child, th:first-child {
 	padding-left:20px;
 }
 
-.settingslist {
-	margin: 1em 0;
+linklist {
+	margin: 0em 0 1em 0;
 }
 
-.settingslist tr {
-	color: #2B67C9;
+linkrow {
+}
+
+linkcell {
+	display: table-cell;
+	padding:1px 10px 1px 0px;
+}
+
+.settingslist {
+	margin: 1em 0;
 }
 
 .settingslist th, td {
     padding-left:10px;
 	border-bottom:none;
 }
-
-.settingslist tr:hover {color: #347BFF}
 
 .settingslist td:first-child, th:first-child {
 	padding-left:0px;

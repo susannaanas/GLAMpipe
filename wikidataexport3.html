@@ -61,51 +61,6 @@
       <settingssection>
         <settingssubtitle><span class="title sectiontitle">Statements to add to Wikidata</span> <a href="wikidataexport3.html">Add statement</a><a href="#"></a></settingssubtitle>
       </settingssection>
-      <settingssection>
-        <div class="settings hbox">
-          <table class="settingslist">
-            <tr>
-              <th>Statement</th>
-              <th>Wikidata property</th>
-              <th>GLAMpipe field</th>
-              <th>Write options</th>
-            </tr>
-            <tr>
-              <td>Property</td>
-              <td>instance of (P31)</td>
-              <td>Type (Wikidata object)</td>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>-- Source</td>
-              <td>stated in (P248)</td>
-              <td>Source (Wikidata object)</td>
-              <td>Add always</td>
-            </tr>
-            <tr>
-              <td>-- Source qualifier</td>
-              <td>VIAF ID (P214)</td>
-              <td>VIAF  (String)</td>
-              <td>Add always</td>
-            </tr>
-            <tr>
-              <td>Property</td>
-              <td>spouse (P26)</td>
-              <td>Spouse  (Wikidata object)</td>
-              <td>Add if missing</td>
-            </tr>
-            <tr>
-              <td>-- Qualifier</td>
-              <td>start time (P580)</td>
-              <td>Starttime (Date)</td>
-              <td>Add always</td>
-            </tr>
-          </table>
-        </div>
-        <submitblock> <a href="wikidataexport6.html">
-          <button class="button" data-id="58ed04cfc0184a0001e19769">Test</button>
-        </a></submitblock>
-      </settingssection>
     </settingscontainer>
     <settingscontainer>
       <settingssection>
@@ -128,6 +83,13 @@
             <option value="">Date</option>
             <option>Coordinates</option>
           </select>
+          <label>Language</label>
+          <select id="license3" name="license3">
+            <option value="">English</option>
+            <option value="">Finnish</option>
+            <option>Swedish</option>
+            <option>Estonian</option>
+          </select>
         </div>
         <div class="settings vbox">
           <label>Options</label>
@@ -142,7 +104,7 @@
       <div class="settings vbox"></div>
       </settingssection>
       <submitblock>
-        <a href="wikidataexport2.html">
+        <a href="wikidataexport7.html">
         <button class="button" data-id="58ed04cfc0184a0001e19769">Save statement</button>
         </a> </submitblock>
       </settingscontainer>
