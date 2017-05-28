@@ -31,23 +31,35 @@
       <div><span class="title sectiontitle">Data source</span> <a href="#">Add source</a></div>
     <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
 </div>
+    <div class="box">
+      <div class="boxleft">
+        <div class="boxtag">Source</div>
+        <div class="title boxtitle">MySource</div>
+        <div class="boxtext">See if these could be a good source</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross boxicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Operations</span> <a href="#">Add operation</a></div>
+      <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
+    </div>
   <div class="fatbox vbox">
-  <div class="inlinetitleblock">
-    <div><span class="title inlinetitle">Wikidata reconcile</span></div>
-  </div>
-  <div class="help">Match value of a field to items in Wikidata.</div>
-  <label>Language to match against</label>
-  <input type="text" name="suffix">
-  <label>Field to match</label>
+    <div class="inlinetitleblock">
+      <div><span class="title inlinetitle">Wikidata reconcile</span></div>
+      </div>
+    <div class="help">Match value of a field to items in Wikidata.</div>
+    <label>Language to match against</label>
+    <input type="text" name="suffix">
+    <label>GLAMpipe field to match</label>
     <select name="name">
-    <option value="">Field 1</option>
-    <option value="">Field 2</option>
-    <option value="">Field 3</option>
-    </select>
+      <option value="">Field 1</option>
+      <option value="">Field 2</option>
+      <option value="">Field 3</option>
+      </select>
     <label>Suffix for the output field</label>
     <input type="text" name="suffix" value="_wd">
     <a href="#"><div data-index="139" class="button create-node">Create node</div></a>
-    </div>
+  </div>
     </pipe>
     <data-workspace>
     <settingscontainer>
@@ -56,21 +68,19 @@
       <div class="wikiglyph wikiglyph-caret-up icon boxicon" aria-hidden="true">
       </div>
     </settingsheader>
-    <settingsblock>
+    <settingsection>
+    <settingsrow>
     <div class="settings vbox">
   <label>Wikidata type to match against</label>
   <div class="help">Click on the proper type or type in the input box to find another one.</div>
-<div></div>
-  <div>
-    <p><a href="#">Human (Q5)</a></p>
-    <p><a href="#">Asteroid (Q3863)</a></p>
-    <p>
+    <a href="#">Human (Q5)</a>
+    <a href="#">Asteroid (Q3863)</a>
       <input name="search" type="text" style="width:90%" value="Autocomplete Wikidata items">
-    </p>
-  </div>
-  <label>Use these fields also to weight matches <a href="#">Add row</a></label>
-  <div class="help">These fields will be used to score better matches.</div>
-<div class="hbox space-between">
+    </div>
+    <div class="settings vbox">
+    <label>Use these fields also to weight matches</label>
+    <div class="help">These fields will be used to score better matches.</div>
+    <div class="hbox">
     <select name="name" style="width:30%">
       <option value="">Suggested item 1</option>
       <option value="">Suggested item 2</option>
@@ -79,7 +89,8 @@
     <input type="text" name="" width="30%">
   </div>
   </div>
-  </settingsblock>
+  </settingsrow>
+  </settingssection>
   <submitblock>
     <button class="button" data-id="58ed04cfc0184a0001e19769">Run</button>
   </submitblock>
